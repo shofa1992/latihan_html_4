@@ -1,0 +1,178 @@
+footer {
+    margin-top: -200px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: blanchedalmond;
+    border: transparent;
+    border-style: solid;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    background-image: url(/images/main_bg.jpg);
+    background-repeat: no-repeat;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 995px;
+    width: auto;
+}
+
+.header {
+    background-image: url(/images/logo-apple1.jpg), url(/images/steve-jobs-face.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, top right;
+    background-size: 210px 230px, 475px 230px;
+    margin-left: 205px;
+    padding-top: 210px;
+    background-color: transparent;
+    color: blanchedalmond;
+    margin: 11px 112px;
+    height: max-content, max-content;
+    width: max-content, max-content;
+}
+
+.menu {
+    display: flex;
+    color: blanchedalmond;
+    background-color: black;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    padding-top: 2px;
+    color: white;
+    text-transform: none;
+    overflow: hidden;
+    text-decoration-color: white;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 10px 43px;
+    text-align: center;
+    color: wheat;
+    text-transform: none;
+}
+
+.menu ul li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 11px;
+    font-family: sans-serif;
+    margin-left: 9px;
+    overflow: hidden;
+}
+
+.menu ul li a:hover {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: sans-serif;
+    margin-left: 9px;
+    background-color: transparent;
+}
+
+.grid {
+    margin-top: -25px;
+}
+
+
+/* box */
+
+.grid-container {
+    display: grid;
+    margin-top: 0px;
+    grid-template-columns: 1.6fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 1.5fr 1.5fr 2.5fr 0.8fr;
+    gap: 8px 10px;
+    grid-template-areas: "pp . isi isi isi" "pt . isi isi isi" "ptp . isi isi isi" ". . isi isi isi";
+}
+
+.pp {
+    grid-area: pp;
+}
+
+.pp img {
+    height: 156px;
+    width: auto;
+}
+
+.pt {
+    grid-area: pt;
+}
+
+.ptp {
+    grid-area: ptp;
+}
+
+.isi {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    grid-area: isi;
+    margin-top: 40px;
+    width: 408px;
+    margin-left: -190px;
+    padding-top: -0px;
+    height: 700px;
+}
+
+.isi h2 {
+    margin-top: -1px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: start;
+}
+
+.isi p {
+    font-family: sans-serif;
+    font-size: 10px;
+    text-decoration: solid;
+    text-align: left;
+    text-justify: newspaper;
+    margin-left: 10px;
+    margin-top: -12px;
+}
+
+@media all and (-ms-high-contrast:none) {
+    .grid-container {
+        display: -ms-grid;
+        -ms-grid-columns: 2.6fr 2.1fr 1.8fr 1fr 1fr;
+        -ms-grid-rows: 1.5fr 2.5fr 2.5fr 0.9fr;
+    }
+    .pp {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    .pt {
+        -ms-grid-row: 2;
+        -ms-grid-row-span: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    .ptp {
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    .isi {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 4;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 3;
+    }
+}
